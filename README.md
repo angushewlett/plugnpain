@@ -75,7 +75,7 @@ These questions and pain points are not intended as criticism of any specific AP
 
 33. Does your API require C++ ABI compatibility? (Beware, keep things simple, use C ABI).
 
-34. RTL object compatibility, both c++ (std:: containers) and c (FILE* and other handles). Don't assume plugin and host will be linked to same RTL instance or even the same version.
+34. RTL object compatibility, both c++ (STL containers, streams) and c (FILE* and other handles). Don't assume plugin and host will be linked to same RTL instance or even the same version.
 
 35. Security contexts. How does your API manage potential differences in security context requirements (e.g. mic and camera access) between host and plug-in? Is there any mechanism for a plug-in to share state (both in memory and via persistent filesystem objects) between instances of itself that may be loaded in different application/host security contexts? For example making the same user-downloaded presets available in different applications.
     
